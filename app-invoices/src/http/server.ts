@@ -16,6 +16,7 @@ app.setValidatorCompiler(validatorCompiler)
 app.register(fastifyCors, { origin: '*' })
 
 app.get('/health', () => {
+  console.log('[Invoices] /health OK')
   return 'OK'
 })
 
